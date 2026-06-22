@@ -1,0 +1,409 @@
+
+/* ================= HERO ================= */
+
+.hero {
+  position: relative;
+  overflow-x: clip;
+  padding: 90px 0;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8fafc 100%
+  );
+}
+
+/* ================= BLUR CIRCLES ================= */
+
+.blur-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blur1 {
+  width: 320px;
+  height: 320px;
+  background: rgba(14,165,233,.2);
+
+  top: 0;
+  right: -100px;
+}
+
+.blur2 {
+  width: 250px;
+  height: 250px;
+  background: rgba(34,211,238,.15);
+
+  bottom: 0;
+  left: -100px;
+}
+
+.blur3 {
+  width: 180px;
+  height: 180px;
+
+  background: rgba(14,165,233,.15);
+
+  top: 40%;
+  right: 30%;
+}
+
+/* ================= CONTAINER ================= */
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 80px;
+}
+
+/* ================= LEFT ================= */
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 22px;
+
+  background: rgba(14,165,233,.08);
+
+  border: 1px solid rgba(14,165,233,.2);
+
+  border-radius: 50px;
+
+  color: #0284c7;
+
+  font-size: .95rem;
+  font-weight: 600;
+
+  margin-bottom: 25px;
+}
+
+.hero-left h1 {
+  font-size: clamp(2.8rem, 4vw, 4rem);
+
+  line-height: 1.1;
+
+  letter-spacing: -2px;
+
+  color: #0f172a;
+
+  margin-bottom: 25px;
+}
+
+.hero-left p {
+  max-width: 600px;
+
+  color: #64748b;
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+
+  margin-bottom: 40px;
+}
+
+/* ================= BUTTONS ================= */
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px 32px;
+
+  border-radius: 16px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .3s ease;
+}
+
+.primary-btn {
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    #0ea5e9,
+    #22d3ee
+  );
+
+  color: white;
+
+  box-shadow:
+  0 15px 30px rgba(14,165,233,.25);
+}
+
+.primary-btn:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+  0 20px 40px rgba(14,165,233,.35);
+}
+
+.secondary-btn {
+  background: white;
+
+  color: #0ea5e9;
+
+  border: 2px solid #0ea5e9;
+}
+
+.secondary-btn:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= STATS ================= */
+
+.hero-stats {
+  display: flex;
+  gap: 25px;
+
+  margin-top: 50px;
+
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  width: 140px;
+  height: 140px;
+
+  background: white;
+
+  border-radius: 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,.06);
+
+  transition: .3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+  0 25px 60px rgba(14,165,233,.15);
+}
+
+.stat-card h3 {
+  color: #0284c7;
+
+  font-size: 2.5rem;
+
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #64748b;
+
+  font-size: .95rem;
+}
+
+/* ================= RIGHT ================= */
+
+.hero-right {
+  flex: 1;
+
+  min-height: 500px;
+
+  position: relative;
+}
+
+/* ================= GLASS CARDS ================= */
+
+.glass-card {
+  position: absolute;
+
+  width: 280px;
+
+  padding: 30px;
+
+  background: rgba(255,255,255,.35);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,.5);
+
+  border-radius: 30px;
+
+  box-shadow:
+  0 20px 60px rgba(0,0,0,.08),
+  0 0 40px rgba(14,165,233,.15);
+
+  transition: .4s;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+}
+
+.glass-card h3 {
+  color: #0f172a;
+
+  margin-bottom: 15px;
+}
+
+.glass-card p {
+  color: #64748b;
+
+  line-height: 1.7;
+}
+
+/* ================= CARD POSITIONS ================= */
+
+.card1 {
+  top: 40px;
+  left: 40px;
+}
+
+.card2 {
+  top: 150px;
+  right: 40px;
+}
+
+.card3 {
+  top: 280px;
+  left: 100px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+
+    gap: 4rem;
+  }
+
+  .hero-left p {
+    max-width: 100%;
+  }
+
+  .hero-buttons,
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-right {
+    width: 100%;
+
+    min-height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .glass-card {
+    position: static;
+
+    width: 100%;
+    max-width: 320px;
+  }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-card {
+    width: 100%;
+    max-width: 180px;
+    height: 120px;
+  }
+
+  .stat-card h3 {
+    font-size: 2rem;
+  }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 456px) {
+
+  .hero-left h1 {
+    font-size: 2.3rem;
+
+    letter-spacing: -1px;
+  }
+
+  .hero-badge {
+    padding: 10px 18px;
+
+    font-size: .85rem;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .glass-card {
+    max-width: 100%;
+  }
+
+}
+
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    #0ea5e9,
+    #22d3ee
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon {
+  color: #0ea5e9;
+
+  margin-right: 12px;
+
+  font-size: 1.2rem;
+}
+

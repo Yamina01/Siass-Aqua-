@@ -1,0 +1,93 @@
+/* ================= CONTACT INFO ================= */
+
+.contact-info{
+  padding:3% 0;
+
+  background:#f8fafc;
+}
+
+/* GRID */
+
+.contact-info-grid{
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:30px;
+}
+
+/* CARD */
+
+.contact-info-card{
+  background:white;
+
+  padding:40px 30px;
+
+  border-radius:30px;
+
+  text-align:center;
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,.06);
+
+  transition:.3s;
+}
+
+.contact-info-card:hover{
+  transform:translateY(-10px);
+}
+
+/* ICON */
+
+.contact-info-icon{
+  width:80px;
+  height:80px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  margin:0 auto 25px;
+
+  border-radius:20px;
+
+  background:#e0f2fe;
+
+  color:#0ea5e9;
+
+  font-size:2rem;
+}
+
+/* TEXT */
+
+.contact-info-card h3{
+  color:#0f172a;
+
+  margin-bottom:15px;
+}
+
+.contact-info-card p{
+  color:#64748b;
+
+  line-height:1.8;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+  .contact-info-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+  .contact-info-grid{
+    grid-template-columns:1fr;
+  }
+
+}

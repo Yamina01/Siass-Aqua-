@@ -1,0 +1,9 @@
+.services {
+  padding: 6rem 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(280px, 1fr));
+  gap: 30px;
+}

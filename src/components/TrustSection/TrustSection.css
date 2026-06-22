@@ -1,0 +1,84 @@
+
+/* ================= TRUST SECTION ================= */
+
+.trust-section{
+  background:#f8fafc;
+  padding: 3%;
+}
+
+.trust-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.trust-card{
+  background:white;
+
+  padding:40px 30px;
+
+  border-radius:30px;
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,.06);
+
+  transition:.3s;
+}
+
+.trust-card:hover{
+  transform:translateY(-10px);
+}
+
+.trust-icon{
+  width:70px;
+  height:70px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  margin:0 auto 25px;
+
+  border-radius:20px;
+
+  background:#e0f2fe;
+
+  color:#0ea5e9;
+
+  font-size:1.8rem;
+}
+
+.trust-card h3{
+  color:#0f172a;
+
+  margin-bottom:15px;
+  text-align: center;
+}
+
+.trust-card p{
+  color:#64748b;
+
+  line-height:1.8;
+  text-align: center;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+  .trust-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+  .trust-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+

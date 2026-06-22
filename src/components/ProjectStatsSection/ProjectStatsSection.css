@@ -1,0 +1,98 @@
+/* ================= PROJECT STATS ================= */
+
+.project-stats{
+  padding:3% 0;
+
+  background:#f8fafc;
+}
+
+/* GRID */
+
+.project-stats-grid{
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:30px;
+}
+
+/* CARD */
+
+.project-stat-card{
+  background:white;
+
+  padding:40px 30px;
+
+  border-radius:30px;
+
+  text-align:center;
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,.06);
+
+  transition:.3s;
+}
+
+.project-stat-card:hover{
+  transform:translateY(-10px);
+}
+
+/* ICON */
+
+.project-stat-icon{
+  width:80px;
+  height:80px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  margin:0 auto 25px;
+
+  border-radius:20px;
+
+  background:#e0f2fe;
+
+  color:#0ea5e9;
+
+  font-size:2rem;
+}
+
+/* NUMBER */
+
+.project-stat-card h3{
+  font-size:2.5rem;
+
+  color:#0f172a;
+
+  margin-bottom:15px;
+}
+
+/* TEXT */
+
+.project-stat-card p{
+  color:#64748b;
+
+  font-size:1.05rem;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+  .project-stats-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+  .project-stats-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+

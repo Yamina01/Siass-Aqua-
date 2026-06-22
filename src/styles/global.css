@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+
+section {
+  padding: clamp(5rem, 8vw, 7rem) 0;
+}
+
+/* ===== MOBILE TYPOGRAPHY ===== */
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: clamp(2.2rem, 8vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+}
+
+
+section{
+  padding:7rem 0;
+}

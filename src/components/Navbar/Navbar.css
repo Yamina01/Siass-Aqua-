@@ -1,0 +1,147 @@
+/* NAVBAR BASE */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* CONTAINER */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+}
+
+
+/* LOGO */
+
+.logo{
+  text-decoration:none;
+
+  color:#0f172a;
+
+  font-size:22px;
+
+  font-weight:700;
+
+  letter-spacing:.5px;
+
+  transition:.3s;
+}
+
+.logo:hover{
+  color:#0ea5e9;
+}
+
+
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #0ea5e9;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.nav-links li a:hover {
+  color: #0ea5e9;
+}
+
+/* ACTIVE LINK */
+
+.nav-links li a.active{
+
+  color:#0ea5e9;
+}
+
+.nav-links li a.active::after{
+
+  width:100%;
+}
+
+
+/* CTA BUTTON */
+.cta-btn {
+  background: linear-gradient(135deg, #0ea5e9, #22d3ee);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(14,165,233,0.3);
+}
+
+/* MOBILE ICON */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #0f172a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+
+    flex-direction: column;
+    padding: 20px;
+    display: none;
+    gap: 18px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .cta-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
