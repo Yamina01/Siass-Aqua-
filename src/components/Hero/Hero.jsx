@@ -48,7 +48,7 @@ const Hero = () => {
 
            <button className="primary-btn" onClick={() => navigate("/contact")} >Request Quote </button>
 
-           <button className="secondary-btn" onClick={() => window.open( "https://wa.me/919876543210", "_blank" ) } >
+           <button className="secondary-btn" onClick={() => window.open( "https://wa.me/918939618666", "_blank" ) } >
               WhatsApp Us
             </button>
 
