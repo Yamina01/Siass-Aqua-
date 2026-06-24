@@ -230,7 +230,7 @@
 .hero-right {
   flex: 1;
 
-  min-height: 500px;
+  min-height: 650px;
 
   position: relative;
 }
@@ -279,18 +279,24 @@
 /* ================= CARD POSITIONS ================= */
 
 .card1 {
-  top: 40px;
-  left: 40px;
+  top: 20px;
+  left: 20px;
+
+  z-index: 3;
 }
 
 .card2 {
-  top: 150px;
-  right: 40px;
+  top: 190px;
+  right: 20px;
+
+  z-index: 2;
 }
 
 .card3 {
-  top: 280px;
-  left: 100px;
+  top: 380px;
+  left: 60px;
+
+  z-index: 1;
 }
 
 /* ================= TABLET ================= */
