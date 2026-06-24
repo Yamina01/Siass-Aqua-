@@ -279,26 +279,22 @@
 /* ================= CARD POSITIONS ================= */
 
 .card1 {
-  top: 20px;
+  top: 40px;
   left: 20px;
-
   z-index: 3;
 }
 
 .card2 {
-  top: 190px;
+  top: 260px;
   right: 20px;
-
   z-index: 2;
 }
 
 .card3 {
-  top: 380px;
-  left: 60px;
-
+  top: 160px;
+  left: 120px;
   z-index: 1;
 }
-
 /* ================= TABLET ================= */
 
 @media (max-width: 992px) {
