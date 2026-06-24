@@ -1,5 +1,6 @@
 
 import "./Hero.css";
+
 import {
   FaTint,
   FaIndustry,
@@ -8,10 +9,9 @@ import {
 
 import { useNavigate } from "react-router-dom";
 
-
-
 const Hero = () => {
   const navigate = useNavigate();
+
   return (
     <section className="hero">
 
@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="container hero-container">
 
         {/* LEFT */}
-        <div className="hero-left" data-aos="fade-right" >
+        <div className="hero-left" data-aos="fade-right">
 
           <div className="hero-badge">
             💧 Trusted Water Solutions Since 2005
@@ -46,9 +46,22 @@ const Hero = () => {
 
           <div className="hero-buttons">
 
-           <button className="primary-btn" onClick={() => navigate("/contact")} >Request Quote </button>
+            <button
+              className="primary-btn"
+              onClick={() => navigate("/contact")}
+            >
+              Request Quote
+            </button>
 
-           <button className="secondary-btn" onClick={() => window.open( "https://wa.me/918939618666", "_blank" ) } >
+            <button
+              className="secondary-btn"
+              onClick={() =>
+                window.open(
+                  "https://wa.me/918939618666",
+                  "_blank"
+                )
+              }
+            >
               WhatsApp Us
             </button>
 
@@ -79,7 +92,10 @@ const Hero = () => {
 
         <div className="hero-right" data-aos="fade-left">
 
-          <div className="glass-card card1" onClick={() => navigate("/services")} >
+          <div
+            className="glass-card card1"
+            onClick={() => navigate("/services")}
+          >
             <h3>
               <FaTint className="icon" />
               Domestic RO
@@ -88,22 +104,28 @@ const Hero = () => {
             <p>Pure water for homes</p>
           </div>
 
-         <div className="glass-card card2" onClick={() => navigate("/services")} >
-            <h3>
-              <FaIndustry className="icon" />
-              Industrial Solutions
-            </h3>
-
-            <p>High-capacity purification systems</p>
-          </div>
-
-         <div className="glass-card card" onClick={() => navigate("/services")} >
+          <div
+            className="glass-card card3"
+            onClick={() => navigate("/services")}
+          >
             <h3>
               <FaRecycle className="icon" />
               Waste Water Management
             </h3>
 
             <p>Sustainable treatment solutions</p>
+          </div>
+
+          <div
+            className="glass-card card2"
+            onClick={() => navigate("/services")}
+          >
+            <h3>
+              <FaIndustry className="icon" />
+              Industrial Solutions
+            </h3>
+
+            <p>High-capacity purification systems</p>
           </div>
 
         </div>
@@ -115,4 +137,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
